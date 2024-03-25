@@ -1,0 +1,239 @@
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container-cart {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  margin-top: 3rem;
+  column-gap: 2.4rem;
+}
+.container-cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.container-cart table td {
+  padding: 1.5rem 0;
+}
+.container-cart table th {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.container-cart table th:nth-child(1) {
+  padding-left: 1.8rem;
+  width: 40%;
+}
+.container-cart table th:nth-child(2) {
+  width: 20%;
+}
+.container-cart table th:nth-child(3) {
+  text-align: center;
+  width: 20%;
+}
+.container-cart table th:nth-child(4) {
+  text-align: center;
+  width: 20%;
+}
+.container-cart table .column-product {
+  display: flex;
+  align-items: center;
+}
+.container-cart table .column-product img {
+  margin-left: 2rem;
+  width: 11rem;
+}
+.container-cart table .column-product p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.container-cart table .column-price,
+.container-cart table .column-temp-price {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.container-cart table .column-temp-price {
+  text-align: center;
+}
+.container-cart table .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-cart table .count p {
+  color: #2e2e2f;
+  font-size: 1.6rem;
+  margin-right: 2.4rem;
+}
+.container-cart table .count .input-number {
+  display: flex;
+}
+.container-cart table .count .input-number .line {
+  padding: 0.3rem 0.4rem;
+  border: 1px solid #969697;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-cart table .count .input-number .subtract {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-right: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.container-cart table .count .input-number .number {
+  width: 60px;
+  border: 1px solid gray;
+  border-radius: 0;
+  padding: 0 1.1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.container-cart table .count .input-number .add {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-left: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.container-cart .calculator .info h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.container-cart .calculator .info p {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+.container-cart .calculator .info input {
+  width: 100%;
+  border: 0.5px #828282 solid;
+  border-radius: 8px;
+  padding: 1.2rem 1.6rem;
+}
+.container-cart .calculator .info input:first-of-type {
+  margin-bottom: 1.2rem;
+}
+.container-cart .calculator .bill h2 {
+  margin: 1.2rem 0;
+}
+.container-cart .calculator .bill .label {
+  font-size: 1.4rem;
+  color: var(--Greyscale-Grey-90, #434344);
+}
+.container-cart .calculator .bill .temp-pay,
+.container-cart .calculator .bill .tax,
+.container-cart .calculator .bill .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.container-cart .calculator .bill .total {
+  border-top: 1px solid #d5d5d5;
+  padding-top: 1.2rem;
+}
+.container-cart .calculator .bill .total .label {
+  font-weight: 700;
+  color: #000;
+}
+.container-cart .calculator .bill .price-temp,
+.container-cart .calculator .bill .price-tax,
+.container-cart .calculator .bill .total-pay {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000;
+}
+.container-cart .calculator .bill .code-sale {
+  display: flex;
+  gap: 0.5rem;
+}
+.container-cart .calculator .bill .code-sale img {
+  width: 24px;
+}
+.container-cart .calculator .bill .code-sale p {
+  color: var(--Primary-2, #a50413);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.container-cart .calculator .bill .sale {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  column-gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.container-cart .calculator .bill .sale input {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 1.4rem 1.6rem;
+}
+.container-cart .calculator .bill .sale input::placeholder {
+  color: #969697;
+  font-weight: 600;
+}
+.container-cart .calculator .bill .sale button {
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #a50413;
+  font-weight: 600;
+  border: 1px solid #a50413;
+}
+.container-cart .calculator .bill .pay {
+  width: 100%;
+  border: none;
+  background-color: #a50413;
+  color: #e8e8e8;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  border-radius: var(--Number-8, 8px);
+  margin: 1.2rem 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container-cart .calculator .bill .phone {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.container-cart .calculator .bill .phone svg {
+  margin-right: 1.2rem;
+}
+.container-cart .calculator .bill .phone p {
+  color: #2e2e2f;
+  font-weight: 400;
+}
+.container-cart .calculator .bill .phone .phone-number {
+  color: #a50413;
+  font-weight: 700;
+  margin-left: 0.8rem;
+}
+
+.button-table-price {
+  margin-top: 2.4rem;
+}
+.button-table-price .buy-more {
+  font-size: 1.8rem;
+  color: #a50413;
+  border: 1px solid #a50413;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border-radius: var(--Number-8, 8px);
+  font-weight: 600;
+  cursor: pointer;
+}
+.button-table-price .update-cart {
+  font-size: 1.8rem;
+  color: #e8e8e8;
+  border: none;
+  border-radius: var(--Number-8, 8px);
+  background-color: #a50413;
+  padding: 1rem 3.4rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=cart.css.map */
